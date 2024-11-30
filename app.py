@@ -7,6 +7,12 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="IPL Data Analysis",
                    layout="wide")
 
+st.markdown(
+    """
+    <h1 style='text-align:center;'>IPL Data Analysis</h1>
+    """,
+    unsafe_allow_html=True)
+
 
 selected=option_menu(
   menu_title=None,
@@ -17,11 +23,9 @@ selected=option_menu(
   orientation="horizontal",
 )
 if selected=="Home":
-  st.markdown(
-    """
-    <h1 style='text-align:center;'>IPL Data Analysis</h1>
-    """,
-    unsafe_allow_html=True)
+  image = Image.open(r'dataset/images/1.png')
+  st.title(image)
+  
 
   
 if selected=="Analysis":
