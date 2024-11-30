@@ -203,7 +203,7 @@ if user_menu_2 == 'Sunrisers Hyderabad':
     decided_t_field = len(srh[srh['toss_decision'] == 'field'])
     winner = len(srh[srh['winner'] == 'Sunrisers Hyderabad'])
 
-    image = Image.open(r'sunrisers.jpg')
+    image = Image.open(r'dataset/images/sunrisers.jpg')
     st.image(image, caption='Sunrisers Hyderabad')
 
     col1,col2 = st.columns(2)
@@ -230,7 +230,7 @@ if user_menu_2 == 'Mumbai Indians':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Mumbai Indians'])
 
-    image = Image.open(r'mi.jpg')
+    image = Image.open(r'dataset/images/mi.jpg')
     st.image(image, caption='Mumbai Indians')
 
     col1,col2 = st.columns(2)
@@ -257,7 +257,7 @@ if user_menu_2 == 'Gujarat Lions':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Gujarat Lions'])
 
-    image = Image.open(r'gl.jpg')
+    image = Image.open(r'dataset/images/gl.jpg')
     st.image(image, caption='Gujarat Lions')
 
     col1,col2 = st.columns(2)
@@ -283,7 +283,7 @@ if user_menu_2 == 'Rising Pune Supergiant':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Rising Pune Supergiant'])
 
-    image = Image.open(r'rps.png')
+    image = Image.open(r'dataset/images/rps.png')
     st.image(image, caption='Rising Pune Supergiant')
 
     col1,col2 = st.columns(2)
@@ -309,7 +309,7 @@ if user_menu_2 == 'Royal Challengers Bangalore':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Royal Challengers Bangalore'])
 
-    image = Image.open(r'rcb.jpg')
+    image = Image.open(r'dataset/images/rcb.jpg')
     st.image(image, caption='Royal Challengers Bangalore')
 
     col1,col2 = st.columns(2)
@@ -335,7 +335,7 @@ if user_menu_2 == 'Kolkata Knight Riders':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Kolkata Knight Riders'])
 
-    image = Image.open(r'kkr.jpg')
+    image = Image.open(r'dataset/images/kkr.jpg')
     st.image(image, caption='Kolkata Knight Riders')
 
     col1,col2 = st.columns(2)
@@ -361,7 +361,7 @@ if user_menu_2 == 'Delhi Daredevils':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Delhi Daredevils'])
 
-    image = Image.open(r'DD.png')
+    image = Image.open(r'dataset/images/DD.png')
     st.image(image, caption='Delhi Daredevils')
 
     col1,col2 = st.columns(2)
@@ -387,7 +387,7 @@ if user_menu_2 == 'Kings XI Punjab':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Kings XI Punjab'])
 
-    image = Image.open(r'KXIP.jpg')
+    image = Image.open(r'dataset/images/KXIP.jpg')
     st.image(image, caption='Kings XI Punjab')
 
     col1,col2 = st.columns(2)
@@ -413,7 +413,7 @@ if user_menu_2 == 'Chennai Super Kings':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Chennai Super Kings'])
 
-    image = Image.open(r'csk.jpg')
+    image = Image.open(r'dataset/images/csk.jpg')
     st.image(image, caption='Chennai Super Kings')
 
     col1,col2 = st.columns(2)
@@ -439,7 +439,7 @@ if user_menu_2 == 'Rajasthan Royals':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Rajasthan Royals'])
 
-    image = Image.open(r'RR.jpg')
+    image = Image.open(r'dataset/images/RR.jpg')
     st.image(image, caption='Rajasthan Royals')
 
     col1,col2 = st.columns(2)
@@ -465,7 +465,7 @@ if user_menu_2 == 'Deccan Chargers':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Deccan Chargers'])
 
-    image = Image.open(r'Dec_ch.jpg')
+    image = Image.open(r'dataset/images/Dec_ch.jpg')
     st.image(image, caption='Deccan Chargers')
 
     col1,col2 = st.columns(2)
@@ -491,7 +491,7 @@ if user_menu_2 == 'Kochi Tuskers Kerala':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Kochi Tuskers Kerala'])
 
-    image = Image.open(r'ktk.jpg')
+    image = Image.open(r'dataset/images/ktk.jpg')
     st.image(image, caption='Kochi Tuskers Kerala')
 
     col1,col2 = st.columns(2)
@@ -517,7 +517,7 @@ if user_menu_2 == 'Pune Warriors':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Pune Warriors'])
 
-    image = Image.open(r'p_war.jpg')
+    image = Image.open(r'dataset/images/p_war.jpg')
     st.image(image, caption='Pune Warriors')
 
     col1,col2 = st.columns(2)
@@ -543,7 +543,7 @@ if user_menu_2 == 'Rising Pune Supergiants':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Rising Pune Supergiants'])
 
-    image = Image.open(r'rps.png')
+    image = Image.open(r'dataset/images/rps.png')
     st.image(image, caption='Rising Pune Supergiants')
 
     col1,col2 = st.columns(2)
@@ -569,7 +569,7 @@ if user_menu_2 == 'Delhi Capitals':
     decided_t_field = len(mi[mi['toss_decision'] == 'field'])
     winner = len(mi[mi['winner'] == 'Delhi Capitals'])
 
-    image = Image.open(r'del_cap.jpg')
+    image = Image.open(r'dataset/images/del_cap.jpg')
     st.image(image, caption='Delhi Capitals')
 
     col1,col2 = st.columns(2)
