@@ -19,7 +19,7 @@ data= pd.read_csv('dataset/matches.csv')
 df = pd.DataFrame(data)
 
 # Sidebar theme image
-image = Image.open(r'dataset/images/1.png','rb')
+image = Image.open(r'dataset/images/1.png')
 st.sidebar.image(image, caption='Indian Premire League')
 
 # reading main DataFrame
