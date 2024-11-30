@@ -3,3 +3,4 @@ plotly
 seaborn
 matplotlib
 Image
+streamlit-option-menu==0.3.6
