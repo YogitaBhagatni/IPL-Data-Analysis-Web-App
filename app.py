@@ -24,7 +24,7 @@ selected=option_menu(
 )
 if selected=="Home":
   image = Image.open(r'dataset/images/1.png')
-  st.title(image)
+  image
   
 
   
