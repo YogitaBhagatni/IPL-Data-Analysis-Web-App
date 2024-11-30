@@ -22,7 +22,13 @@ selected=option_menu(
   orientation="horizontal",
 )
 if selected=="Home":
-  st.title("IPL Data Analysis ")
+  st.markdown(
+    """
+    <h1 style='text-align:center;'>IPL Data Analysis</h1>
+    """,
+    unsafe_allow_html=True)
+
+  
 if selected=="Analysis":
   # adding markdown for music button
   st.sidebar.markdown('*Groove- Theme song*', unsafe_allow_html=False)
