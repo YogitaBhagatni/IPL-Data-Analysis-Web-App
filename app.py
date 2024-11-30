@@ -17,8 +17,8 @@ selected=option_menu(
 if selected=="Home":
   st.title("IPL Data Analysis ")
 if selected=="Analysis":
-     # adding markdown for music button
-     st.sidebar.markdown('*Groove- Theme song*', unsafe_allow_html=False)
+  # adding markdown for music button
+  st.sidebar.markdown('*Groove- Theme song*', unsafe_allow_html=False)
 
   # adding music button in the sidebar
   button= st.sidebar.button('Music', key=None, help=None, on_click=None, args=None, kwargs=None, disabled=False)
