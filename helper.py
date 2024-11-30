@@ -171,7 +171,7 @@ def m_2008 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    Matches_city['index'] = range(len(Matches_city))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig=px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
