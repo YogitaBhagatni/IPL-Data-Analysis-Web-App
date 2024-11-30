@@ -16,7 +16,7 @@ st.markdown(
 
 selected=option_menu(
   menu_title=None,
-  options=["Home","Analysis"],
+  options=["Home","Analysis","Dataset"],
   icons=["house","book"],
   menu_icon="cast",
   default_index=0,
@@ -613,6 +613,10 @@ if selected=="Analysis":
       with col2:
           st.header('Number of wins')
           st.title(winner)
+
+if selected=="Dataset":
+  st.subheader("Records")
+  st.dataframe(df)
   
   
   
