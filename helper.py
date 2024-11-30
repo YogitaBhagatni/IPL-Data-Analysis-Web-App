@@ -19,7 +19,7 @@ def winners (df):
     winners = b = df['winner'].value_counts()
     winners = pd.DataFrame(winners)
     winners = winners.reset_index()
-    winners['index'] = range(len(winner))
+    winners['index'] = range(len(winners))
     winners = winners.rename(columns={'index': 'team', 'winner': 'number of wins'})
     return px.bar(winners, x='team',y='number of wins',color_discrete_sequence=px.colors.qualitative.Alphabet)
 
