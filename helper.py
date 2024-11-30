@@ -27,7 +27,7 @@ def pom (df):
     Pl_of_match = df['player_of_match'].value_counts()
     Pl_of_match = pd.DataFrame(Pl_of_match)
     Pl_of_match = Pl_of_match.reset_index()
-     Pl_of_match['index'] = range(len(PI_of_match))
+    Pl_of_match['index'] = range(len(PI_of_match))
     Pl_of_match = Pl_of_match.rename(
         columns={'index': 'Player', 'player_of_match': 'No. of times awarded player of match'})
     return Pl_of_match
