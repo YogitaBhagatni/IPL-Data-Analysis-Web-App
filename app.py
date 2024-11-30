@@ -13,6 +13,9 @@ st.markdown(
     """,
     unsafe_allow_html=True)
 
+data= pd.read_csv('dataset/matches.csv')
+df = pd.DataFrame(data)
+
 
 selected=option_menu(
   menu_title=None,
@@ -41,8 +44,7 @@ if selected=="Analysis":
   
   
   
-  data= pd.read_csv('dataset/matches.csv')
-  df = pd.DataFrame(data)
+  
   
   # Sidebar theme image
   image = Image.open(r'dataset/images/1.png')
@@ -616,7 +618,7 @@ if selected=="Analysis":
 
 if selected=="Dataset":
   st.subheader("Records")
-  st.dataframe(helper.df)
+  st.dataframe(df)
   
   
   
