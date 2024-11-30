@@ -11,7 +11,7 @@ def match_per_season (df):
     Season = pd.DataFrame(Season)
     Season = Season.reset_index()
     Season = Season.rename(columns={'Season': 'Count of matches'})
-    df['index'] = range(len(Season))
+    Season['index'] = range(len(Season))
     Season = Season.rename(columns={'index': 'season'})
     return px.bar(Season, x='season',y='Count of matches')
 
@@ -19,7 +19,7 @@ def winners (df):
     winners = b = df['winner'].value_counts()
     winners = pd.DataFrame(winners)
     winners = winners.reset_index()
-    df['index'] = range(len(winner))
+    winners['index'] = range(len(winner))
     winners = winners.rename(columns={'index': 'team', 'winner': 'number of wins'})
     return px.bar(winners, x='team',y='number of wins',color_discrete_sequence=px.colors.qualitative.Alphabet)
 
@@ -27,7 +27,7 @@ def pom (df):
     Pl_of_match = df['player_of_match'].value_counts()
     Pl_of_match = pd.DataFrame(Pl_of_match)
     Pl_of_match = Pl_of_match.reset_index()
-    df['index'] = range(len(PI_of_match))
+     Pl_of_match['index'] = range(len(PI_of_match))
     Pl_of_match = Pl_of_match.rename(
         columns={'index': 'Player', 'player_of_match': 'No. of times awarded player of match'})
     return Pl_of_match
@@ -45,7 +45,7 @@ def toss_winner_count (df):
     toss_stats = df['toss_winner'].value_counts()
     toss_stats = pd.DataFrame(toss_stats)
     toss_stats = toss_stats.reset_index()
-    df['index'] = range(len(toss_stats))
+    toss_stats['index'] = range(len(toss_stats))
     toss_stats = toss_stats.rename(columns={'index': 'Team', 'toss_winner': 'No. of times toss winner'})
     fig = px.bar(toss_stats, x='Team', y='No. of times toss winner', color_discrete_sequence=px.colors.qualitative.Vivid)
     return fig
@@ -54,7 +54,7 @@ def matches_in_cities_2008 (df):
     Matches_city = season_2008['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -62,7 +62,7 @@ def matches_in_cities_2009 (df):
     season_2009 = df[df['Season'] == 'IPL-2009']
     Matches_city = season_2009['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.reset_index()
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
@@ -72,7 +72,7 @@ def matches_in_cities_2010 (df):
     Matches_city = season_2010['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -81,7 +81,7 @@ def matches_in_cities_2011 (df):
     Matches_city = season_2011['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -90,7 +90,7 @@ def matches_in_cities_2012 (df):
     Matches_city = season_2012['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -99,7 +99,7 @@ def matches_in_cities_2013 (df):
     Matches_city = season_2013['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -108,7 +108,7 @@ def matches_in_cities_2014 (df):
     Matches_city = season_2014['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -117,7 +117,7 @@ def matches_in_cities_2015 (df):
     Matches_city = season_2015['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -126,7 +126,7 @@ def matches_in_cities_2016 (df):
     Matches_city = season_2016['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -135,7 +135,7 @@ def matches_in_cities_2017 (df):
     Matches_city = season_2017['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -144,7 +144,7 @@ def matches_in_cities_2018 (df):
     Matches_city = season_2018['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -153,7 +153,7 @@ def matches_in_cities_2018 (df):
     Matches_city = season_2018['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
-    df['index'] = range(len(Matches_city))
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -162,6 +162,7 @@ def matches_in_cities_2019 (df):
     Matches_city = season_2019['city'].value_counts()
     Matches_city = pd.DataFrame(Matches_city)
     Matches_city = Matches_city.reset_index()
+    Matches_city['index'] = range(len(Matches_city))
     Matches_city = Matches_city.rename(columns={'index': 'City', 'city': 'No. of matches played'})
     return Matches_city
 
@@ -170,6 +171,7 @@ def m_2008 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
+    Matches_city['index'] = range(len(Matches_city))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig=px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -179,7 +181,7 @@ def m_2009 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -189,7 +191,7 @@ def m_2010 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -199,7 +201,7 @@ def m_2011 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -209,7 +211,7 @@ def m_2012 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -219,7 +221,7 @@ def m_2013 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -229,7 +231,7 @@ def m_2014 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -239,7 +241,7 @@ def m_2015 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -249,7 +251,7 @@ def m_2016 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -259,7 +261,7 @@ def m_2017 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -269,7 +271,7 @@ def m_2018 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
@@ -279,7 +281,7 @@ def m_2019 (df):
     Matches_winner = season_2008['winner'].value_counts()
     Matches_winner = pd.DataFrame(Matches_winner)
     Matches_winner = Matches_winner.reset_index()
-    df['index'] = range(len(Matches_winner))
+    Matches_winner['index'] = range(len(Matches_winner))
     Matches_winner = Matches_winner.rename(columns={'index': 'Team', 'winner': 'Number of wins'})
     fig= px.bar(Matches_winner, x='Team', y='Number of wins', color_discrete_sequence=px.colors.qualitative.Light24)
     return fig
