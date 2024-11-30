@@ -10,7 +10,6 @@ def match_per_season (df):
     Season = df['Season'].value_counts()
     Season = pd.DataFrame(Season)
     Season = Season.reset_index()
-    Season = Season.sort_values('index')
     Season = Season.rename(columns={'Season': 'Count of matches'})
     Season = Season.rename(columns={'index': 'season'})
     return px.bar(Season, x='season',y='Count of matches')
