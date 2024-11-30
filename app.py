@@ -4,9 +4,15 @@ import helper
 from PIL import Image
 from streamlit_option_menu import option_menu
 
-st.set_page_config(page_title="            IPL Data Analysis",
-                   layout="wide",
-                   page_icon="🧑‍⚕️")
+st.set_page_config(page_title="IPL Data Analysis",
+                   layout="wide")
+
+st.markdown(
+    """
+    <h1 style='text-align:center;'>IPL Data Analysis</h1>
+    """,
+    unsafe_allow_html=True
+)
 selected=option_menu(
   menu_title=None,
   options=["Home","Analysis"],
