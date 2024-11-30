@@ -616,7 +616,7 @@ if selected=="Analysis":
 
 if selected=="Dataset":
   st.subheader("Records")
-  st.dataframe(df)
+  st.dataframe(helper.df)
   
   
   
