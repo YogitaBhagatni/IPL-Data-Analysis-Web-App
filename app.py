@@ -3,7 +3,21 @@ import pandas as pd
 import helper
 from PIL import Image
 
-# adding markdown for music button
+st.set_page_config(page_title="IPL Data Analysis",
+                   layout="wide",
+                   page_icon="🧑‍⚕️")
+selected=option_menu(
+  menu_title=None,
+  options=["Home","Analysis"],
+  icons=["house","book"],
+  menu_icon="cast",
+  default_index=0,
+  orientation="horizontal",
+)
+if selected=="Home":
+  st.title("IPL Data Analysis ")
+if selected=="Analysis":
+     # adding markdown for music button
 st.sidebar.markdown('*Groove- Theme song*', unsafe_allow_html=False)
 
 # adding music button in the sidebar
@@ -587,3 +601,5 @@ if user_menu_2 == 'Delhi Capitals':
     with col2:
         st.header('Number of wins')
         st.title(winner)
+
+
